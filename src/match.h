@@ -15,6 +15,7 @@ public:
 
     // constructor/destructor
     Match(Player a, Player b);
+
 };
 
 #endif

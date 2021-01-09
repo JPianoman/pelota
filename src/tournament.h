@@ -23,6 +23,8 @@ public:
     Player getNextOpponent();
 private:
     void calculateNextRound();
+    void calculateMatch(Match match);
+    std::string toss(Match match);
 };
 
 #endif

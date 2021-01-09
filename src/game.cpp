@@ -42,7 +42,7 @@ Game::~Game()
 
 void Game::Init()
 {
-    // load shaders
+  /*  // load shaders
     ResourceManager::LoadShader("../src/shaders/default.vs", "../src/shaders/default.fs", nullptr, "default");
 
     // configure shaders
@@ -71,7 +71,7 @@ void Game::Init()
     Box = new GameObject(boxPos, ResourceManager::GetModel("box"), 0.2f);
     file1.open("file1.dat");
     file2.open("file2.dat");
-
+*/
     // fill player list
     FillPlayerList();
 
@@ -177,12 +177,16 @@ void Game::Render()
 
 void Game::FillPlayerList()
 {
-    // create new player
-    Player *p = new Player("Nadal", 40, 180, 1, false, 99);
-    // insert player in list
+    Player *p = new Player("Rafael Nadal", 35, 180, 2, false, 85, 100);
     Players.push_back(*p);
 
-    p = new Player("Federer", 50, 190, 2, true, 90);
+    p = new Player("Roger Federer", 40, 185, 5, true, 75, 111);
+    Players.push_back(*p);
+
+    p = new Player("Novak Djokovic", 35, 185, 1, true, 90, 111);
+    Players.push_back(*p);
+    
+    p = new Player("Dominic Thiem", 30, 187, 3, true, 85, 152);
     Players.push_back(*p);
 }
 

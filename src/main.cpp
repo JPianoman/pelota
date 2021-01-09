@@ -25,7 +25,7 @@ Game Pelota(SCREEN_WIDTH, SCREEN_HEIGHT);
 
 int main(int argc, char *argv[])
 {
-    glfwInit();
+  /*  glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 2);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -66,11 +66,11 @@ int main(int argc, char *argv[])
     // OpenGL configuration
     // --------------------
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-
+*/
     // initialize game
     // ---------------
     Pelota.Init();
-
+/*
     // deltaTime variables
     // -------------------
     float deltaTime = 0.0f;
@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
 
     glfwTerminate();
     return 0;
-}
+*/}/*
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
@@ -151,4 +151,4 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     // make sure the viewport matches the new window dimensions; note that width and
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
-}
+}*/
