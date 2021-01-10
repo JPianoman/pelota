@@ -177,16 +177,19 @@ void Game::Render()
 
 void Game::FillPlayerList()
 {
-    Player *p = new Player("Rafael Nadal", 35, 180, 2, false, 85, 100);
+    Player *p = new Player("Novak Djokovic", 33, 188, 77, 1, true, true, 90, 12030);
     Players.push_back(*p);
 
-    p = new Player("Roger Federer", 40, 185, 5, true, 75, 111);
+    p = new Player("Rafael Nadal", 34, 185, 85, 2, false, true, 82, 9850);
     Players.push_back(*p);
 
-    p = new Player("Novak Djokovic", 35, 185, 1, true, 90, 111);
+    p = new Player("Dominic Thiem", 27, 185, 79, 3, true, false, 85, 9125);
     Players.push_back(*p);
-    
-    p = new Player("Dominic Thiem", 30, 187, 3, true, 85, 152);
+
+    p = new Player("Daniil Medvedev", 24, 198, 83, 4, true, true, 85, 8470);
+    Players.push_back(*p);
+
+    p = new Player("Roger Federer", 39, 185, 85, 5, true, false, 75, 6630);
     Players.push_back(*p);
 }
 

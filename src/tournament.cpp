@@ -41,11 +41,38 @@ void Tournament::calculateNextRound()
 // should calculate result of the next match
 void Tournament::calculateMatch(Match match)
 {
-//    toss(match);
-    std::cout << toss(match) << std::endl;
-//    points();
-}
+    toss(match);
+    if (Name.compare("GRANDSLAM") == 0 || Name.compare("ATP1000") == 0)
+        int winningSets = 3;
+    else if (Name.compare("ATP500") == 0 || Name.compare("ATP250") == 0)
+        int winningSets = 2;
 
+    while (match.PointsA < 50 && match.PointsB < 50)
+    {
+    /*    if (winnerOfRallyA(match) == true)
+        {*/
+            if (match.PointsA == 0 || match.PointsA == 15)
+                match.PointsA += 15;
+            else if (match.PointsA == 30)
+                match.PointsA += 10;
+            else if (match.PointsA == 40 && match.PointsB < 40)
+            {
+                match.GamesA++;
+                match.PointsA = match.PointsB = 0;
+            }
+    }
+}
+/*
+bool Tournament::winnerOfRallyA(Match match)  //TODO
+{
+    srand (time(NULL));
+    int x = rand() % 18 + 1
+    if ((x /**/ /**/ /*&& match.A.Serve == true) || (x /**/ /**/ /*&& match.A.Serve == false))
+        return true;
+    else
+        return false;
+}
+*/
 std::string Tournament::toss(Match match)
 {
     std::string toss_string;
@@ -54,19 +81,19 @@ std::string Tournament::toss(Match match)
     switch (toss_value)
     {
         case 0:
-            match.A.Serve = true;
+            match.ServeA = true;
             toss_string = match.A.Name + " has won the toss and has chosen to serve";
             break;
         case 1:
-            match.A.Serve = false;
+            match.ServeA = false;
             toss_string = match.A.Name + " has won the toss and has chosen to receive";
             break;
         case 2:
-            match.B.Serve = false;
+            match.ServeA = false;
             toss_string = match.B.Name + " has won the toss and has chosen to serve";
             break;
         case 3:
-            match.B.Serve = true;
+            match.ServeA = true;
             toss_string = match.B.Name + " has won the toss and has chosen to receive";
             break;
     }
@@ -78,27 +105,3 @@ Player Tournament::getNextOpponent()
 {
     //TODO
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

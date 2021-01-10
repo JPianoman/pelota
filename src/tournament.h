@@ -24,6 +24,7 @@ public:
 private:
     void calculateNextRound();
     void calculateMatch(Match match);
+    bool winnerOfRallyA(Match match);
     std::string toss(Match match);
 };
 
