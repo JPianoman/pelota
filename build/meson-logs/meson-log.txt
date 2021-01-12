@@ -1,0 +1,215 @@
+Build started at 2021-01-10T19:40:44.075504
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.52.1
+Source dir: /home/jonunruh/programs/JPianoman/pelota
+Build dir: /home/jonunruh/programs/JPianoman/pelota/build
+Build type: native build
+Project name: pelota
+Project version: 0.0.1
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckcpp.cc -o /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 8.3.0 "c++ (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C++ linker for the build machine: GNU ld.bfd 2.31.1
+No CXXFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+Sanity check compiler command line: c++ /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckcpp.cc -o /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckcpp.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 8.3.0 "c++ (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C++ linker for the host machine: GNU ld.bfd 2.31.1
+Build machine cpu family: arm
+Build machine cpu: armv7l
+Host machine cpu family: arm
+Host machine cpu: armv7l
+Target machine cpu family: arm
+Target machine cpu: armv7l
+Running compile:
+Working directory:  /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmpv674qs9t
+Command line:  c++ /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmpv674qs9t/testfile.cpp -o /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmpv674qs9t/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+Running compile:
+Working directory:  /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmp5eqdijqj
+Command line:  c++ /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmp5eqdijqj/testfile.cpp -o /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmp5eqdijqj/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wl,--start-group -lstdc++fs -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main() { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library stdc++fs found: YES
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckc.c -o /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 8.3.0 "cc (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C linker for the build machine: GNU ld.bfd 2.31.1
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckc.c -o /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/jonunruh/programs/JPianoman/pelota/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 8.3.0 "cc (Raspbian 8.3.0-6+rpi1) 8.3.0")
+C linker for the host machine: GNU ld.bfd 2.31.1
+WARNING: Consider using the builtin option for language standard version rather than adding flags by hand.
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['/usr/bin/pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29)
+Determining dependency 'glfw3' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion glfw3` -> 0
+3.2.1
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags glfw3` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config glfw3 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lglfw
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config glfw3 --libs` -> 0
+-lglfw
+Running compile:
+Working directory:  /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmplaphwcuy
+Command line:  c++ /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmplaphwcuy/testfile.cpp -o /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmplaphwcuy/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main() {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+4
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmpg8_jp0hd
+Command line:  c++ /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmpg8_jp0hd/testfile.cpp -o /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmpg8_jp0hd/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/arm-linux-gnueabihf/8/
+programs: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/
+libraries: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/8/:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/8/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency glfw3 found: YES 3.2.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'glm' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion glm` -> 0
+0.9.9
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags glm` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config glm --libs` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config glm --libs` -> 0
+
+Run-time dependency glm found: YES 0.9.9
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'assimp' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion assimp` -> 0
+4.1.0
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags assimp` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config assimp --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lassimp
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config assimp --libs` -> 0
+-lassimp
+Run-time dependency assimp found: YES 4.1.0
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'freetype2' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion freetype2` -> 0
+22.1.16
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags freetype2` -> 0
+-I/usr/include/freetype2 -I/usr/include/libpng16
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config freetype2 --libs` -> 0
+-L/usr/lib/arm-linux-gnueabihf -lfreetype
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config freetype2 --libs` -> 0
+-lfreetype
+Run-time dependency freetype2 found: YES 22.1.16
+Program meson-post-install.py found: YES (/usr/bin/python3 /home/jonunruh/programs/JPianoman/pelota/meson-post-install.py)
+Build targets in project: 1
+Found ninja-1.8.2 at /usr/bin/ninja
+Running compile:
+Working directory:  /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmppfxnhvyn
+Command line:  cc /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmppfxnhvyn/testfile.c -o /home/jonunruh/programs/JPianoman/pelota/build/meson-private/tmppfxnhvyn/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/arm-linux-gnueabihf/8/
+programs: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/bin/
+libraries: =/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/lib/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/8/:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/8/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+
+Compiler stderr:
+ 

@@ -18,7 +18,6 @@ public:
     int Ability;
     int RankingPoints;
 
- 
     // constructor/destructor
     Player(std::string name, int age, int height, int weight, int ranking, bool right_handed, bool both_handed, int ability, int ranking_points);
 

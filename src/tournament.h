@@ -14,9 +14,10 @@ public:
     std::string Name;
     std::vector<Player> Players;
     std::vector<Match> Matches;
+    int WinningSets;
 
     // constructor/destructor
-    Tournament(std::string name, std::vector<Player> players);
+    Tournament(std::string name, std::vector<Player> players, int winning_sets);
     ~Tournament();
 
     void Init();
@@ -25,6 +26,9 @@ private:
     void calculateNextRound();
     void calculateMatch(Match match);
     bool winnerOfRallyA(Match match);
+    void changeService(Match match);
+    void saveGamesOfSet(Match match);
+    void tieBreak(Match match);
     std::string toss(Match match);
 };
 

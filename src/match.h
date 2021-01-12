@@ -18,20 +18,14 @@ public:
     int PointsA;
     int GamesA;
     int SetsA;
-    int GamesSet1A;
-    int GamesSet2A;
-    int GamesSet3A;
-    int GamesSet4A;
-    int GamesSet5A;
+    int GamesSetA [5] = {};
+    int TiebreakPointsSetA [5] = {};
 
     int PointsB;
     int GamesB;
     int SetsB;
-    int GamesSet1B;
-    int GamesSet2B;
-    int GamesSet3B;
-    int GamesSet4B;
-    int GamesSet5B;
+    int GamesSetB [5] = {};
+    int TiebreakPointsSetB [5] = {};
 
     // constructor/destructor
     Match(Player a, Player b);

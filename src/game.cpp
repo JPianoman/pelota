@@ -75,7 +75,7 @@ void Game::Init()
     // fill player list
     FillPlayerList();
 
-    Tournament *t = new Tournament("ATP", Players);
+    Tournament *t = new Tournament("ATP500", Players, 2);
 }
 
 void Game::Update(float dt)
