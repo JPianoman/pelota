@@ -12,24 +12,30 @@ class Tournament
 {
 public:
     std::string Name;
-    std::vector<Player> Players;
-    std::vector<Match> Matches;
+    std::vector<Player*> Players;
+    std::vector<Match*> Matches;
     int WinningSets;
+    std::string Surface;
+    bool OwnMatch = false;
 
     // constructor/destructor
-    Tournament(std::string name, std::vector<Player> players, int winning_sets);
+    Tournament(std::string name, std::vector<Player*> players, int winning_sets, std::string surface);
     ~Tournament();
 
     void Init();
-    Player getNextOpponent();
+    Player getNextOpponent(Match *match);
 private:
+    int sortPlayersByRanking(Match *match);
+    void ability(Match *match);
     void calculateNextRound();
-    void calculateMatch(Match match);
-    bool winnerOfRallyA(Match match);
-    void changeService(Match match);
-    void saveGamesOfSet(Match match);
-    void tieBreak(Match match);
-    std::string toss(Match match);
+    void calculateMatch(Match *match);
+    bool winnerOfRallyA(Match *match);
+    void changeService(Match *match);
+    void saveGamesOfSet(Match *match);
+    void tieBreak(Match *match);
+    std::string printScore(Match *match);
+    std::string printResult(Match *match);
+    std::string toss(Match *match);
 };
 
 #endif

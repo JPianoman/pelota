@@ -22,7 +22,7 @@ GameObject        *Box;
 GameObject        *Court;
 BallObject        *Ball;
 TextRenderer      *Text;
-std::vector<Player> Players;
+std::vector<Player*> Players;
 
 std::ofstream file1;
 std::ofstream file2;
@@ -75,7 +75,7 @@ void Game::Init()
     // fill player list
     FillPlayerList();
 
-    Tournament *t = new Tournament("ATP500", Players, 2);
+    Tournament *t = new Tournament("ATP500", Players, 2, "hard");
 }
 
 void Game::Update(float dt)
@@ -177,37 +177,82 @@ void Game::Render()
 
 void Game::FillPlayerList()
 {
-    Player *p = new Player("Novak Djokovic", 33, 188, 77, 1, true, true, 90, 12030);
-    Players.push_back(*p);
+    Player *p = new Player("Novak", "Djokovic", "Serbia", "22.05.1987", 188, 77, 1, true, true, 85, 87, 87, 14, 6);
+    Players.push_back(p);
 
-    p = new Player("Rafael Nadal", 34, 185, 85, 2, false, true, 82, 9850);
-    Players.push_back(*p);
+    p = new Player("Rafael", "Nadal", "Spain", "03.06.1986", 185, 85, 2, false, true, 100, 83, 83, 14, 6);
+    Players.push_back(p);
 
-    p = new Player("Dominic Thiem", 27, 185, 79, 3, true, false, 85, 9125);
-    Players.push_back(*p);
+    p = new Player("Dominic", "Thiem", "Austria", "03.09.1993", 185, 79, 3, true, false, 87, 85, 85, 14, 5);
+    Players.push_back(p);
 
-    p = new Player("Daniil Medvedev", 24, 198, 83, 4, true, true, 85, 8470);
-    Players.push_back(*p);
+    p = new Player("Daniil", "Medvedev", "Russia",  "11.02.1996", 198, 83, 4, true, true, 85, 85, 85, 14, 5);
+    Players.push_back(p);
 
-    p = new Player("Roger Federer", 39, 185, 85, 5, true, false, 75, 6630);
-    Players.push_back(*p);
+    p = new Player("Roger", "Federer", "Switzerland", "08.08.1981", 185, 85, 5, true, false, 79, 80, 82, 15, 5);
+    Players.push_back(p);
+
+    p = new Player("Stefanos", "Tsitsipas", "Greece", "12.08.1998", 193, 89, 6, true, false, 83, 83, 83, 14, 5);
+    Players.push_back(p);
+
+    p = new Player("Alexander", "Zverev", "Germany", "20.04.1997", 198, 90, 7, true, true, 83, 83, 83, 14, 5);
+    Players.push_back(p);
+
+    p = new Player("Andrey", "Rublev", "Russia", "20.10.1997", 188, 75, 8, true, true, 78, 80, 80, 14, 5);
+    Players.push_back(p);
+
+    p = new Player("Diego", "Schwartzman", "Argentinia", "16.08.1992", 170, 64, 9, true, true, 76, 75, 75, 13, 6);
+    Players.push_back(p);
+
+    p = new Player("Matteo", "Berrettini", "Italy", "12.04.1996", 196, 95, 10, true, true, 74, 74, 74, 14, 4);
+    Players.push_back(p);
+
+    p = new Player("Gael", "Monfils", "France", "01.09.1986", 193, 85, 11, true, true, 75, 74, 73, 14, 5);
+    Players.push_back(p);
+
+    p = new Player("Denis", "Shapovalov", "Canada", "15.04.1999", 185, 75, 12, false, false, 76, 76, 76, 14, 4);
+    Players.push_back(p);
+
+    p = new Player("Roberto", "Bautista Agut", "Spain", "14.04.1998", 183, 75, 13, true, true, 75, 74, 74, 14, 5);
+    Players.push_back(p);
+
+    p = new Player("David", "Goffin", "Belgium", "07.10.1990", 180, 70, 14, true, true, 76, 74, 74, 13, 5);
+    Players.push_back(p);
+
+    p = new Player("Milos", "Raonic", "Canada", "27.12.1990", 196, 98, 15, true, true, 75, 75, 75, 15, 4);
+    Players.push_back(p);
+
+    p = new Player("Pablo", "Carreno Busta", "Spain", "12.07.1991", 188, 78, 16, true, true, 77, 77, 77, 14, 5);
+    Players.push_back(p);
+
+    p = new Player("Fabio", "Fognini", "Italy", "24.05.1987", 178, 79, 17, true, true, 75, 74, 74, 13, 5);
+    Players.push_back(p);
+
+    p = new Player("Stan", "Wawrinka", "Switzerland", "28.03.1985", 179, 81, 18, true, false, 76, 74, 74, 14, 4);
+    Players.push_back(p);
+
+    p = new Player("Grigor", "Dimitrov", "Bulgaria", "16.05.1991", 191, 81, 19, true, false, 77, 76, 76, 13, 5);
+    Players.push_back(p);
+
+    p = new Player("Karen", "Khachanov", "Russia", "21.05.1996", 198, 87, 20, true, true, 74, 74, 74, 14, 5);
+    Players.push_back(p);
 }
 
-// collision detection
-//bool CheckCollision(GameObject &one, GameObject &two);
-//Collision CheckCollision(BallObject &one, GameObject &two);
+/* collision detection
+bool CheckCollision(GameObject &one, GameObject &two);
+Collision CheckCollision(BallObject &one, GameObject &two);
 
-//void Game::DoCollisions()
-//{
-//        //TODO
-//}
+void Game::DoCollisions()
+{
+        //TODO
+}
 
-//bool CheckCollision(GameObject &one, GameObject &two)
-//{
-//        //TODO
-//}
+bool CheckCollision(GameObject &one, GameObject &two)
+{
+        //TODO
+}
 
-//Collision CheckCollision(BallObject &one, GameObject &two)
-//{
-//        //TODO
-//}
+Collision CheckCollision(BallObject &one, GameObject &two)
+{
+        //TODO
+}*/

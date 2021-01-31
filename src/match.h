@@ -10,25 +10,29 @@
 class Match
 {
 public:
-    Player A;
-    Player B;
+    Player *A;
+    Player *B;
 
    // match information
+    std::string liveScore;
+
     bool ServeA;
+    int AbilityA;
     int PointsA;
     int GamesA;
     int SetsA;
-    int GamesSetA [5] = {};
-    int TiebreakPointsSetA [5] = {};
+    int GamesSetA [5] = { 0, 0, 0, 0, 0 };
+    int TiebreakPointsSetA [5] = { -1, -1, -1, -1, -1 };
 
+    int AbilityB;
     int PointsB;
     int GamesB;
     int SetsB;
-    int GamesSetB [5] = {};
-    int TiebreakPointsSetB [5] = {};
+    int GamesSetB [5] = { 0, 0, 0, 0, 0 };
+    int TiebreakPointsSetB [5] = { -1, -1, -1, -1, -1 };
 
     // constructor/destructor
-    Match(Player a, Player b);
+    Match(Player *a, Player *b);
 
 };
 

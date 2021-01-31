@@ -8,18 +8,23 @@ class Player
 {
 public:
     // general
-    std::string Name;
-    int Age;
+    std::string Forename;
+    std::string Surname;
+    std::string Nationality;
+    std::string Birthday;
     int Height;
     int Weight;
     int Ranking;
     bool RightHanded;
     bool BothHanded;
-    int Ability;
-    int RankingPoints;
+    int AbilityClay;
+    int AbilityHard;
+    int AbilityGrass;
+    int ServeAbility;
+    int ReturnAbility;
 
     // constructor/destructor
-    Player(std::string name, int age, int height, int weight, int ranking, bool right_handed, bool both_handed, int ability, int ranking_points);
+    Player(std::string forename, std::string surname, std::string nationality, std::string birthday, int height, int weight, int ranking, bool right_handed, bool both_handed, int ability_clay, int ability_hard, int ability_grass, int serve_ability, int return_ability);
 
     void scored();
 };
